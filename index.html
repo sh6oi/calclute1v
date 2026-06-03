@@ -3,7 +3,7 @@
  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>لوحة إدارة الطلبات</title>
+  <title>لوحة إدارة الطلبات - تتبع الشحنات</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="/_sdk/element_sdk.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&amp;display=swap" rel="stylesheet">
@@ -63,40 +63,61 @@
     <h1 id="main-title" class="text-3xl md:text-4xl font-extrabold text-white mb-2 drop-shadow-lg">🚀 لوحة التحكم</h1>
     <p class="text-gray-300 text-sm md:text-base">اختر من القائمة أدناه للبدء</p>
    </header><!-- Navigation Buttons -->
-   <nav class="flex flex-wrap justify-center gap-3 md:gap-4 mb-6"><a href="https://sh6OI.github.io/index11/" target="_blank" rel="noopener noreferrer" class="btn-gradient px-6 py-3 md:px-8 md:py-4 rounded-xl text-white font-bold text-sm md:text-lg shadow-lg flex items-center gap-2 no-underline" style="--primary-action: #00b894; --secondary-action: #00cec9;">
-     <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
-     </svg><span>اضافة طلب جديد</span> </a> <a href="https://sh6oi.github.io/index22/" target="_blank" rel="noopener noreferrer" class="btn-gradient px-6 py-3 md:px-8 md:py-4 rounded-xl text-white font-bold text-sm md:text-lg shadow-lg flex items-center gap-2 no-underline" style="--primary-action: #6c5ce7; --secondary-action: #a29bfe;">
-     <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
-     </svg><span>إدارة الطلبات</span> </a> <a href="https://sh6oi.github.io/call1vv/" target="_blank" rel="noopener noreferrer" class="btn-gradient px-6 py-3 md:px-8 md:py-4 rounded-xl text-white font-bold text-sm md:text-lg shadow-lg flex items-center gap-2 no-underline" style="--primary-action: #e17055; --secondary-action: #fab1a0;">
-     <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
-     </svg><span>حساب السعر</span> </a>
-   </nav><!-- Content Area -->
+   <nav class="flex flex-wrap justify-center gap-3 md:gap-4 mb-6">
+    <!-- زر إضافة طلب جديد -->
+    <a href="https://sh6OI.github.io/index11/" target="_blank" rel="noopener noreferrer" class="btn-gradient px-6 py-3 md:px-8 md:py-4 rounded-xl text-white font-bold text-sm md:text-lg shadow-lg flex items-center gap-2 no-underline" style="--primary-action: #00b894; --secondary-action: #00cec9;">
+     <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+     <span>إضافة طلب جديد</span>
+    </a>
+    <!-- زر إدارة الطلبات -->
+    <a href="https://sh6oi.github.io/index22/" target="_blank" rel="noopener noreferrer" class="btn-gradient px-6 py-3 md:px-8 md:py-4 rounded-xl text-white font-bold text-sm md:text-lg shadow-lg flex items-center gap-2 no-underline" style="--primary-action: #6c5ce7; --secondary-action: #a29bfe;">
+     <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+     <span>إدارة الطلبات</span>
+    </a>
+    <!-- زر حساب السعر -->
+    <a href="https://sh6oi.github.io/call1vv/" target="_blank" rel="noopener noreferrer" class="btn-gradient px-6 py-3 md:px-8 md:py-4 rounded-xl text-white font-bold text-sm md:text-lg shadow-lg flex items-center gap-2 no-underline" style="--primary-action: #e17055; --secondary-action: #fab1a0;">
+     <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+     <span>حساب السعر</span>
+    </a>
+    <!-- زر تتبع الشحنات (جديد) -->
+    <a href="https://sh6oi.github.io/adtracking/" target="_blank" rel="noopener noreferrer" class="btn-gradient px-6 py-3 md:px-8 md:py-4 rounded-xl text-white font-bold text-sm md:text-lg shadow-lg flex items-center gap-2 no-underline" style="--primary-action: #fdcb6e; --secondary-action: #f39c12;">
+     <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
+       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6" />
+       <circle cx="12" cy="16" r="2" stroke="currentColor" fill="none" />
+       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6h18" />
+     </svg>
+     <span>تتبع الشحنات</span>
+    </a>
+   </nav>
+   <!-- Content Area (يبقى كما هو للتوافق مع السكربتات) -->
    <div id="content-area" class="flex-1 glass-card rounded-2xl overflow-hidden min-h-[400px] md:min-h-[500px] flex items-center justify-center">
     <div id="placeholder" class="text-center p-8">
-     <div class="text-6xl md:text-8xl mb-4">
-      📋
-     </div>
+     <div class="text-6xl md:text-8xl mb-4">📋</div>
      <h2 class="text-xl md:text-2xl font-bold text-white mb-2">مرحباً بك!</h2>
      <p class="text-gray-300 text-sm md:text-base">اضغط على أحد الأزرار أعلاه لعرض المحتوى</p>
     </div>
     <div id="loading" class="hidden flex-col items-center gap-4">
      <div class="loading-spinner"></div>
      <p class="text-white font-medium">جاري التحميل...</p>
-    </div><iframe id="content-frame" class="hidden w-full h-full border-0" style="min-height: 500px;" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
-   </div><!-- Back Button -->
-   <div id="back-container" class="hidden mt-4 text-center"><button onclick="goBack()" class="bg-gray-700 hover:bg-gray-600 px-6 py-3 rounded-xl text-white font-bold transition-all flex items-center gap-2 mx-auto">
-     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
-     </svg><span>العودة للق��ئم��</span> </button>
+    </div>
+    <iframe id="content-frame" class="hidden w-full h-full border-0" style="min-height: 500px;" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
+   </div>
+   <!-- Back Button -->
+   <div id="back-container" class="hidden mt-4 text-center">
+    <button onclick="goBack()" class="bg-gray-700 hover:bg-gray-600 px-6 py-3 rounded-xl text-white font-bold transition-all flex items-center gap-2 mx-auto">
+     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+     <span>العودة للقائمة</span>
+    </button>
    </div>
   </div>
   <script>
     const defaultConfig = {
       main_title: '🚀 لوحة التحكم',
-      btn_new_order: 'اضافة ��لب جديد',
+      btn_new_order: 'اضافة طلب جديد',
       btn_manage: 'ادارة الطلبات',
       btn_calculate: 'حساب السعر',
-      background_color: '#1a1a2e',
-      text_color: '#ffffff'
+      btn_tracking: 'تتبع الشحنات'  // إضافة النص للزر الجديد
     };
 
     let config = { ...defaultConfig };
@@ -178,10 +199,12 @@
       const btnNewOrder = document.querySelector('#btn-new-order span');
       const btnManage = document.querySelector('#btn-manage span');
       const btnCalculate = document.querySelector('#btn-calculate span');
+      const btnTracking = document.querySelector('#btn-tracking span');
       
       if (btnNewOrder) btnNewOrder.textContent = config.btn_new_order || defaultConfig.btn_new_order;
       if (btnManage) btnManage.textContent = config.btn_manage || defaultConfig.btn_manage;
       if (btnCalculate) btnCalculate.textContent = config.btn_calculate || defaultConfig.btn_calculate;
+      if (btnTracking) btnTracking.textContent = config.btn_tracking || defaultConfig.btn_tracking;
     }
 
     function mapToCapabilities(cfg) {
@@ -198,7 +221,8 @@
         ['main_title', cfg.main_title || defaultConfig.main_title],
         ['btn_new_order', cfg.btn_new_order || defaultConfig.btn_new_order],
         ['btn_manage', cfg.btn_manage || defaultConfig.btn_manage],
-        ['btn_calculate', cfg.btn_calculate || defaultConfig.btn_calculate]
+        ['btn_calculate', cfg.btn_calculate || defaultConfig.btn_calculate],
+        ['btn_tracking', cfg.btn_tracking || defaultConfig.btn_tracking]
       ]);
     }
 
@@ -212,6 +236,5 @@
       });
     }
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9c94cb0071d2db87',t:'MTc3MDMxOTUxOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ </body>
 </html>
-
